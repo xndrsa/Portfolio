@@ -1,14 +1,17 @@
 import random
 import time
 
-while True:
+
 #pregunta al usuario
- user_name = input('Ingresa tu nombre ')
- print("Hola ",user_name)
- time.sleep(1)
- print("vamos a jugar")
- time.sleep(1)
- user_option = input('piedra, papel o tijera? => ')
+user_name = input('Ingresa tu nombre ').capitalize()
+print("Hola ",user_name)
+time.sleep(1)
+print("vamos a jugar")
+time.sleep(1)
+
+
+while true:
+ user_option = input('piedra, papel o tijera? => ').lower().strip()
 
 #Seleccion random del sistema
  list1 = (1, 2, 3)
